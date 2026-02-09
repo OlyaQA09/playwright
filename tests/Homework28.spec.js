@@ -10,4 +10,8 @@ test.describe('Garage — already logged in user', () => {
 
     await expect(userGaragePage.page.locator('#addCarMileage')).toBeVisible({ timeout: 2000 });
   });
+
+
+ 
 });
+
