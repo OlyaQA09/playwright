@@ -11,9 +11,9 @@ jobs:
       image: mcr.microsoft.com/playwright:v1.57.0-noble
 
     env:
-      BASE_URL: "https://qauto.forstudy.space/"
-      USERNAME1: "guest"
-      PASSWORD1: "welcome2qauto"
+      BASE_URL: ${{ secrets.BASE_URL }}
+      USERNAME1: ${{ secrets.USERNAME1 }}
+      PASSWORD1: ${{ secrets.PASSWORD1 }}
       CI: "true"
 
     steps:
